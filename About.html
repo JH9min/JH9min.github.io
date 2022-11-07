@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+        <head>
+            <link  type="text/css" rel="stylesheet" href="./css/w3.css" charset="utf-8"/>
+            <link  type="text/css" rel="stylesheet" href="./css/style.css" charset="utf-8"/>
+            <link rel="icon" href="./png/ark.png" type="image/icon type">
+            <meta charset="utf-8"/>
+            <title>ARK's Developer</title>
+        </head>
+        <body onload="myFunction()" style="margin:0;">
+
+            <div id="loader"></div>
+
+            <div style="display:none;" id="myDiv" class="animate-bottom">
+                <div class="w3-top">
+                    <div class="w3-bar w3-white w3-wide w3-padding w3-card">
+                        <a href="Home.html" class="w3-bar-item w3-button"><b>ARK : Survival Evolved</b></a>
+                        <div class="w3-right w3-hide-small">
+                            <a href="Creatures.html" class="w3-bar-item w3-button">Creatures</a>
+                            <a href="About.html" class="w3-bar-item w3-button">About</a>
+                        </div>
+                    </div>
+                </div>
+
+                <button onclick="topFun()" id="myBtn" title="Go to Top">Top</button>
+
+                <header >
+                    <div class="title">
+                        <div>
+                            <h1>
+                                <b>
+                                    Studio Wildcard
+                                </b>    
+                            </h1>
+                        </div>
+                        <div style="padding: 0% 5% 0% 5%;">
+                            <p style=" line-height: 2rem;">
+                                Studio Wildcard was founded in 2014 with the mission of bringing AAA quality to ambitious indie productions designed for core gamers. With countless years of combined industry experience across multiple independent and studio-backed titles, Wildcard's core team has grown with offices in Redmond, WA and Gainesville, FL including distributed team members across multiple continents.
+                            </p>
+                        </div>
+                    </div>
+                </header>
+
+                <div style="display: flex;">
+                    <hr>
+                </div>
+
+                <div style="padding-left: 15%;padding-right: 15%; margin-bottom: 5%;">
+                    <div style="display: flex; flex-direction: column;align-items: center;">
+                        <h1>
+                            Let's see where Studio  Wildcard is!
+                        </h1>
+
+                    </div>
+                        
+                    <div id="rightvideo">
+                        <div class="video-container">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2686.3567558089685!2d-122.20727078436705!3d47.6774911791895!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x549012e7c3fb7cbd%3A0xe33b5e218795e430!2sStudio%20Wildcard!5e0!3m2!1szh-TW!2stw!4v1650812738784!5m2!1szh-TW!2stw" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                            
+                    </div>
+                </div>
+
+                <footer>
+                    <div style="flex: 6; display:flex; align-content: center;">
+                        <p style="font-size: 3.1rem; display: flex; flex-direction: column; justify-content:center; ">
+                            <b>
+                                Want more?
+                            </b>    
+                            <span>
+                                <b>
+                                    Check 
+                                </b>
+                                <b style="color: rgb(255, 208, 137);">
+                                    HERE!
+                                </b>
+                            </span>
+
+                        </p>                        
+                    </div>
+                    <div class="otherwebsite">
+                        <div class="eachother" style="margin-top: 10%;">
+                            <a href="https://ark.fandom.com/wiki/ARK_Survival_Evolved_Wiki"><b>Fandom Wiki</b></a>
+                        </div>
+                        <div class="eachother">
+                            <a href="https://store.steampowered.com/app/346110/ARK_Survival_Evolved/"><b>Steam</b></a>
+                        </div>
+                        <div class="eachother">
+                            <a href="https://www.reddit.com/r/ARK/"><b>Reddit</b></a>
+                        </div>
+                        <div class="eachother">
+                            <a href="https://twitter.com/survivetheark"><b>Twitter</b></a>
+                        </div>
+                                
+                    </div>
+                </footer>
+
+            <script>
+                var mybutton = document.getElementById("myBtn");
+                window.onscroll=function(){scrollFun()};
+                var myVar;
+            
+                
+                function scrollFun()
+                {
+                  if(document.body.scrollTop>20||document.documentElement.scrollTop>20)
+                  {
+                    mybutton.style.display="block";
+                  }
+                  else
+                  {
+                    mybutton.style.display="none";
+                  }
+                }
+            
+                function topFun()
+                {
+                  document.body.scrollTop = 0;
+                  document.documentElement.scrollTop = 0;
+                }
+
+                function myFunction() {
+                myVar = setTimeout(showPage, 1000);
+                }
+
+                function showPage() {
+                document.getElementById("loader").style.display = "none";
+                document.getElementById("myDiv").style.display = "block";
+                }
+              
+            
+            </script>
+            
+            </div>
+        </body>
+
+
+</html>
